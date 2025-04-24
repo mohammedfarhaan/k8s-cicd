@@ -22,7 +22,7 @@ RUN cp -rvf neogym-html/* .
 RUN rm -rf neogym-html neogym.zip
 
 # Expose port 80 for HTTP traffic
-EXPOSE 80
+EXPOSE 80 22
 
 # Default NGINX command
 CMD ["nginx", "-g", "daemon off;"]
